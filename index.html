@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fast-Parity</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fast-Parity</h1>
+            <div id="period-display">Period: <span id="current-period">0</span></div>
+            <div id="countdown">Countdown: <span id="countdown-time">00:00</span></div>
+        </header>
+
+        <section class="betting-colors">
+            <h2>Join a Team</h2>
+            <button class="color-btn" data-color="green">Join Green</button>
+            <button class="color-btn" data-color="violet">Join Violet</button>
+            <button class="color-btn" data-color="red">Join Red</button>
+        </section>
+
+        <section class="number-selection">
+            <h2>Select a Number</h2>
+            <div class="number-grid">
+                <!-- Number buttons will be added here dynamically -->
+            </div>
+        </section>
+
+        <section class="place-bet">
+            <button id="place-bet-btn">Place Bet</button> <!-- needs backend integration -->
+            <div id="bet-amount">Bet Amount: <span id="current-bet">0</span> RS</div>
+        </section>
+
+        <section class="records">
+            <h2>Fast-Parity Records</h2>
+            <div id="records-list">
+                <!-- Records will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="orders">
+            <h2>Orders</h2>
+            <button class="order-tab" data-view="everyone">Everyone's Order</button>
+            <button class="order-tab" data-view="my">My Order</button>
+            <div id="order-display"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
